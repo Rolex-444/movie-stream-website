@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Market</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1>STREAM MARKET</h1>
+        <div class="nav">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="video-player">
+            <video id="player" controls autoplay></video>
+        </div>
+
+        <div class="file-info">
+            <p class="label">File name :</p>
+            <h2 id="filename">Loading...</h2>
+        </div>
+
+        <div class="player-buttons">
+            <button onclick="playVideo('vlc')"><i class="fas fa-play-circle"></i> WATCH IN VLC PLAYER</button>
+            <button onclick="playVideo('mx')"><i class="fas fa-play-circle"></i> WATCH IN MX PLAYER</button>
+            <button onclick="playVideo('play')"><i class="fas fa-play-circle"></i> WATCH IN PLAY T PLAYER</button>
+            <button onclick="playVideo('km')"><i class="fas fa-play-circle"></i> WATCH IN KM PLAYER</button>
+            <button onclick="playVideo('s')"><i class="fas fa-play-circle"></i> WATCH IN S PLAYER</button>
+            <button onclick="playVideo('hd')"><i class="fas fa-play-circle"></i> WATCH IN HD PLAYER(4K)</button>
+            <button onclick="downloadVideo()" class="download-btn"><i class="fas fa-download"></i> DOWNLOAD VIDEO</button>
+        </div>
+
+        <div class="footer">
+            <h2>VISIT <span>OUR BOTS</span></h2>
+            <p>Welcome to our online streaming platform! Our website allows users to generate streamable links for various files using Telegram bot.</p>
+            <p>Please note that we are not responsible for the content uploaded or streamed through our service.</p>
+            <p>Copyright © 2023 <a href="#">CODEFLIX</a>. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
